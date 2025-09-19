@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:training_task/Style/app_asset.dart';
-import 'package:training_task/Style/app_colors.dart';
 import 'package:training_task/Style/app_styles.dart';
 
 class AlphaRadioWidget extends StatelessWidget {
@@ -48,13 +46,13 @@ class AlphaRadioWidget extends StatelessWidget {
                   children: [
                     Text(
                       "Alpha Radio",
-                      style: AppStyles.primarystyle.copyWith(fontSize: 20),
+                      style: AppStyles.primarystyle.copyWith(fontSize: 20.r),
                     ),
                     Text(
                       "The Best Radio For Music",
                       style: AppStyles.primarystyle.copyWith(
                         color: Colors.grey,
-                        fontSize: 16,
+                        fontSize: 14,
                       ),
                     ),
                   ],

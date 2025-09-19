@@ -9,7 +9,7 @@ import 'package:training_task/Style/app_colors.dart';
 import 'package:training_task/widgets/photo_widget.dart';
 
 class IntroScreen extends StatefulWidget {
-  IntroScreen({super.key});
+  const IntroScreen({super.key});
 
   @override
   State<IntroScreen> createState() => _IntroScreenState();
@@ -94,7 +94,7 @@ class _IntroScreenState extends State<IntroScreen> {
                   style: TextStyle(
                     color: AppColors.mainColor,
                     fontWeight: FontWeight.bold,
-                    fontSize: 14,
+                    fontSize: 14.r,
                   ),
                 ),
               ),

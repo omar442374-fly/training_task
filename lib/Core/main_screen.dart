@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:training_task/Core/global_screen.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import 'package:training_task/Core/info_screen.dart';
 import 'package:training_task/Core/music_screen.dart';
+import 'package:training_task/Core/search_screen.dart';
 import 'package:training_task/Core/setting_screen.dart';
 import 'package:training_task/Style/app_colors.dart';
 import 'package:training_task/Style/app_styles.dart';
@@ -17,7 +19,7 @@ class _MainScreenState extends State<MainScreen> {
   List<Widget> screens = [
     InfoScreen(),
     MusicScreen(),
-    GlobalScreen(),
+    SearchScreen(),
     SettingScreen(),
   ];
   @override
@@ -28,7 +30,7 @@ class _MainScreenState extends State<MainScreen> {
         selectedItemColor: AppColors.mainColor,
         unselectedItemColor: AppColors.secondaryColor,
         backgroundColor: AppColors.whiteColor,
-        selectedLabelStyle: AppStyles.primarystyle.copyWith(fontSize: 13),
+        selectedLabelStyle: AppStyles.primarystyle.copyWith(fontSize: 13.r),
 
         currentIndex: currentIndex,
         onTap: (value) {

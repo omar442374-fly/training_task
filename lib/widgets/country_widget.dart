@@ -64,7 +64,7 @@ class CountryWidget extends StatelessWidget {
                         secondaryText,
                         style: AppStyles.primarystyle.copyWith(
                           color: Colors.grey,
-                          fontSize: 14,
+                          fontSize: 12.r,
                         ),
                       ),
                     ],

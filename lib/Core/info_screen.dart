@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:training_task/Style/app_asset.dart';
 import 'package:training_task/Style/app_colors.dart';
@@ -26,7 +27,7 @@ class InfoScreen extends StatelessWidget {
             // Hero section with an image
             Container(
               color: AppColors.mainColor,
-              padding: const EdgeInsets.symmetric(vertical: 24.0),
+              padding:  EdgeInsets.symmetric(vertical: 24.w),
               child: Center(
                 child: Column(
                   children: [
@@ -35,29 +36,29 @@ class InfoScreen extends StatelessWidget {
                       backgroundColor: Colors.white,
                       child: Image.asset(
                         AppAsset.logo,
-                        width: 50,
-                        height: 50,
+                        width: 50.w,
+                        height: 50.h,
                         fit: BoxFit.cover,
                       ),
                     ),
-                    const SizedBox(height: 8),
-                    const Text(
+                     SizedBox(height: 8.h),
+                     Text(
                       'Alpha Radio',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 24,
+                        fontSize: 24.r,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    const Text(
+                     Text(
                       'The Best Radio For Music',
-                      style: TextStyle(color: Colors.white70, fontSize: 16),
+                      style: TextStyle(color: Colors.white70, fontSize: 16.r),
                     ),
                   ],
                 ),
               ),
             ),
-            const SizedBox(height: 16),
+             SizedBox(height: 16.h),
             // Information list tiles
             _buildListTile(
               leadingIcon: Icons.business,

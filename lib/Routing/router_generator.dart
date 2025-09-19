@@ -2,7 +2,6 @@ import 'package:go_router/go_router.dart';
 import 'package:training_task/Core/choice.dart';
 import 'package:training_task/Core/intro_screen.dart';
 import 'package:training_task/Core/main_screen.dart';
-import 'package:training_task/Core/music_screen.dart';
 import 'package:training_task/Core/onBoarding.dart';
 import 'package:training_task/Routing/app_routes.dart';
 

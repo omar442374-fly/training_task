@@ -3,11 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
-import 'package:training_task/Routing/app_routes.dart';
 import 'package:training_task/Style/app_asset.dart';
 import 'package:training_task/Style/app_colors.dart';
 import 'package:training_task/Style/app_styles.dart';
-import 'package:training_task/widgets/photo_widget.dart';
 
 class MusicScreen extends StatefulWidget {
   const MusicScreen({super.key});
@@ -48,7 +46,7 @@ class _MusicScreenState extends State<MusicScreen> {
           "Choice",
           style: AppStyles.primarystyle.copyWith(
             color: AppColors.whiteColor,
-            fontSize: 16,
+            fontSize: 16.r,
           ),
         ),
         automaticallyImplyLeading: false,
@@ -76,15 +74,23 @@ class _MusicScreenState extends State<MusicScreen> {
               "Choices",
               style: Theme.of(
                 context,
-              ).textTheme.titleLarge!.copyWith(fontSize: 30),
+              ).textTheme.titleLarge!.copyWith(fontSize: 30.r),
             ),
             SizedBox(height: 18.h),
             IconButton(
               onPressed: () {
-                _playMusic();
+                setState(() {
+                  isPlaying = !isPlaying;
+                });
+                if (isPlaying)
+                  _playMusic();
+                else
+                  _pauseMusic();
               },
               icon: Icon(
-                Icons.play_circle_fill_outlined,
+                isPlaying
+                    ? Icons.pause_circle_filled_outlined
+                    : Icons.play_circle_fill_outlined,
                 size: 80,
                 color: Colors.deepPurple,
               ),

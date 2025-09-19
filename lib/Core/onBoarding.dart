@@ -14,6 +14,7 @@ class Onboarding extends StatefulWidget {
 }
 
 class _OnboardingState extends State<Onboarding> {
+  @override
   void initState() {
     super.initState();
     // Navigate after 3 seconds

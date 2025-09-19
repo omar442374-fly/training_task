@@ -20,15 +20,10 @@ class _SettingsScreenState extends State<SettingScreen> {
     final themeProvider = Provider.of<ThemeProvider>(context);
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         backgroundColor: AppColors.mainColor,
-        automaticallyImplyLeading: false,
+
         title: Text('Settings', style: TextStyle(color: Colors.white)),
-        actions: [
-          Padding(
-            padding: EdgeInsets.only(right: 16.w),
-            child: Icon(Icons.photo_camera, color: Colors.white),
-          ),
-        ],
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -67,7 +62,7 @@ class _SettingsScreenState extends State<SettingScreen> {
               child: Text(
                 'Version',
                 style: TextStyle(
-                  fontSize: 16,
+                  fontSize: 16.r,
                   fontWeight: FontWeight.bold,
                   color: Colors.black54,
                 ),
@@ -77,7 +72,7 @@ class _SettingsScreenState extends State<SettingScreen> {
               padding: EdgeInsets.only(left: 16.w),
               child: Text(
                 'v1.0.1',
-                style: TextStyle(fontSize: 14, color: Colors.grey),
+                style: TextStyle(fontSize: 14.r, color: Colors.grey),
               ),
             ),
             SizedBox(height: 50.h),
@@ -85,7 +80,7 @@ class _SettingsScreenState extends State<SettingScreen> {
               alignment: Alignment.center,
               child: Text(
                 'Made with ❤ from SKM TechSoft',
-                style: TextStyle(fontSize: 12),
+                style: TextStyle(fontSize: 12.r),
               ),
             ),
             SizedBox(height: 20.h),
