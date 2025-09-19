@@ -58,7 +58,7 @@ class CountryWidget extends StatelessWidget {
                     children: [
                       Text(
                         primaryText,
-                        style: Theme.of(context).textTheme.titleLarge,
+                        style: Theme.of(context).textTheme.titleLarge!,
                       ),
                       Text(
                         secondaryText,

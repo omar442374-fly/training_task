@@ -94,7 +94,7 @@ class _IntroScreenState extends State<IntroScreen> {
                   style: TextStyle(
                     color: AppColors.mainColor,
                     fontWeight: FontWeight.bold,
-                    fontSize: 14.r,
+                    fontSize: 14,
                   ),
                 ),
               ),
@@ -119,7 +119,7 @@ class _IntroScreenState extends State<IntroScreen> {
                   color: AppColors.mainColor,
                 ),
               ),
-              SizedBox(width: 34),
+              SizedBox(width: 34.w),
             ],
           ),
           SizedBox(height: 30.h),

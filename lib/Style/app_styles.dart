@@ -4,14 +4,13 @@ import 'package:training_task/Style/app_colors.dart';
 
 class AppStyles {
   static final primarystyle = TextStyle(
-    fontSize: 15.r,
+    fontSize: 15,
     fontWeight: FontWeight.bold,
-    color: AppColors.blackColor
+    color: AppColors.blackColor,
   );
   static final secondaryStyle = TextStyle(
-    fontSize: 12.r,
+    fontSize: 12,
     fontWeight: FontWeight.normal,
-    color: AppColors.blackColor
+    color: AppColors.blackColor,
   );
-  
 }
